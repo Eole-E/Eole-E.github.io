@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By Eole</title>
+     <title>By Eole</title>
 </head>
 <style>
     /*Sakura animation using WebGL. No images are used. The framerate might be slow or the demo might not play at all in some older systems so you can watch this video: http://www.screenr.com/BFZ8. Let me make it clear that I did not make this and just thought is was very cool and wanted to share it.
@@ -45,7 +45,7 @@ p{
 .picture{
 	width: 160px;
 	height: 200px;
-	background-image: url(https://tse3-mm.cn.bing.net/th/id/OIP-C.Zxtf2X2EddV-g7hKyBhilAHaQB?pid=ImgDet&rs=1);
+	/* background-image: url((https://tse3-mm.cn.bing.net/th/id/OIP-C.Zxtf2X2EddV-g7hKyBhilAHaQB?pid=ImgDet&rs=1); */
 	background-size: 160px 200px;
 	background-repeat: no-repeat;
 	float: left;
@@ -87,6 +87,15 @@ p{
 }
 .neirong>div{
 	text-align: right;
+}
+#si{
+	position: fixed;
+	left: 94%;
+	top: 95%;
+	color: white;
+	font-size: 17px;
+	opacity: 0.2;
+	font-weight: 20px;
 }
 </style>
 <body>
@@ -221,7 +230,9 @@ p{
         </div>
     <!-- <button type="button" onclick="toggleAnimation(this)">Stop</button> -->
     </div>
-
+	<div id="si">
+		<span>by Eole</span>
+	</div>
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
 uniform mat4 uProjection;
